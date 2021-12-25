@@ -6,14 +6,14 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.CrossOrigin;
+
 
 import ng.community.application.DAO.HospitalServiceRepository;
 import ng.community.application.DAO.PatientRepository;
 import ng.community.application.model.HospitalService;
 import ng.community.application.model.Patient;
 @Service
-@CrossOrigin(origins = "http://localhost:4200")
+
 public class ServiceRegistration {
 	
 	private HospitalServiceRepository hospitalrepository;

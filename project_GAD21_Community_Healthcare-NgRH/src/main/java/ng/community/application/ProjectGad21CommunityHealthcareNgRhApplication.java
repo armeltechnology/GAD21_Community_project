@@ -28,7 +28,7 @@ public class ProjectGad21CommunityHealthcareNgRhApplication implements CommandLi
 		
 		HospitalService serv1= hosprepo.save(new HospitalService(null, "General", 5000, null));
 		HospitalService serv2= hosprepo.save(new HospitalService(null, "COVID19", 15000, null));
-		HospitalService serv3= hosprepo.save(new HospitalService(null, "psychiatrie", 8000, null));
+		HospitalService serv3= hosprepo.save(new HospitalService(null, "psychiatry", 8000, null));
 		
 		
 		

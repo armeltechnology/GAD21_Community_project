@@ -16,7 +16,7 @@ import ng.community.application.model.Patient;
 import ng.community.application.service.ServiceRegistration;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RequestMapping(path = "api/registration")
 public class PatientController {
 	
@@ -29,13 +29,13 @@ public class PatientController {
 	
 	
 	@GetMapping
-	@CrossOrigin(origins = "http://localhost:4200",allowedHeaders = "*")
+	@CrossOrigin(origins = "*")
 	public List<HospitalService> gethospitalservice(){
 		return serviceregistration.gethospitalservice();
 		
 	}
 	@PostMapping
-	@CrossOrigin(origins = "http://localhost:4200",allowedHeaders = "*")
+	@CrossOrigin(origins = "*")
 	public void register(@RequestBody Patient patient) {
 		serviceregistration.addNewPatient(patient);
 		

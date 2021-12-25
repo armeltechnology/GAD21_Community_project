@@ -6,14 +6,14 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.CrossOrigin;
+
 
 import ng.community.application.DAO.PatientRepository;
 import ng.community.application.configuration.Authentication_Service;
 import ng.community.application.model.Patient;
 
 @Service
-@CrossOrigin(origins = "http://localhost:4200")
+
 public class ServiceConsultation {
 	
 	private PatientRepository patientrepository;
