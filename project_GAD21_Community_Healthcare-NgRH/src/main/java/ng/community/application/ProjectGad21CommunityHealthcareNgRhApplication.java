@@ -25,17 +25,16 @@ public class ProjectGad21CommunityHealthcareNgRhApplication implements CommandLi
 	public void run(String... args) throws Exception {
 		BCryptPasswordEncoder encoder= new BCryptPasswordEncoder();
 		 
-		
 		HospitalService serv1= hosprepo.save(new HospitalService(null, "General", 5000, null));
 		HospitalService serv2= hosprepo.save(new HospitalService(null, "COVID19", 15000, null));
 		HospitalService serv3= hosprepo.save(new HospitalService(null, "psychiatry", 8000, null));
 		
 		
 		
-	doctrepo.save(new Doctor(null, "ngounou armel", "ngounouarmel45@yahoo.fr", encoder.encode("12345"), 456, "General Hospital", serv1));
-	doctrepo.save(new Doctor(null, "Maguella Ariane", "anrianemaguella@yahoo.fr", encoder.encode("12345"), 455, "central Hospital", serv2));
-	doctrepo.save(new Doctor(null, "arrey john", "arreyjohn@yahoo.fr", encoder.encode("12345"), 123, "Regional Hospital", serv1));
-	doctrepo.save(new Doctor(null, "Firmin houkoulam", "firmin@yahoo.fr", encoder.encode("12345"), 459, "central Hospital", serv3));
+	doctrepo.save(new Doctor(null, "Godbeless armel", "godblessarmel45@yahoo.fr", encoder.encode("12345"), 456, "General Hospital", serv1));
+	doctrepo.save(new Doctor(null, "Beautiful Ariane", "anrianebeautifful@yahoo.fr", encoder.encode("12345"), 455, "central Hospital", serv2));
+	doctrepo.save(new Doctor(null, "Chocolate john", "chocolatejohn@yahoo.fr", encoder.encode("12345"), 123, "Regional Hospital", serv1));
+	doctrepo.save(new Doctor(null, "Firmin Largent", "firmin@yahoo.fr", encoder.encode("12345"), 459, "central Hospital", serv3));
 	
 		
 	}

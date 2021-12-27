@@ -66,7 +66,7 @@ public class NgRHsecurity extends WebSecurityConfigurerAdapter{
 		http
 			.csrf().disable()
 			.authorizeRequests()
-			.antMatchers("/api/registration","/api/consultation","/","/favicon.ico","/main.c737c403cf9edf86.js","/index.html","/polyfills.d1cd7a0f6edbaaab.js","/runtime.31ad056e5e0c3459.js","/scripts.d5c2dc4f591b00f0.js","/styles.3fbfbacd888bf7f7.css").permitAll()
+			.antMatchers("/api/registration","/info","/registration","/consultation","/api/consultation","/","/favicon.ico","/main.380fa7b380e80892.js","/index.html","/polyfills.d1cd7a0f6edbaaab.js","/runtime.31ad056e5e0c3459.js","/scripts.d5c2dc4f591b00f0.js","/styles.3fbfbacd888bf7f7.css").permitAll()
 			.anyRequest()
 			.authenticated();
 			

@@ -23,7 +23,6 @@ public class Patient implements Serializable {
 	@Column(nullable =false,unique = true,length = 45)
 	private String email;
 	@Column(nullable =false,unique = false,length = 200)
-	@JsonIgnore
 	private String password;
 	@Column(nullable =false,unique = false,length = 45)
 	private Date birthDate;

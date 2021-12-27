@@ -2,6 +2,7 @@ ng/community/application/DAO/DoctorRepository.class
 ng/community/application/DAO/HospitalServiceRepository.class
 ng/community/application/configuration/Patient_Info_Mapper.class
 ng/community/application/configuration/Authentication_Service_doctor.class
+ng/community/application/restController/DefaultUrlController.class
 ng/community/application/ProjectGad21CommunityHealthcareNgRhApplication.class
 ng/community/application/configuration/Authentication_Service.class
 ng/community/application/model/Doctor.class
