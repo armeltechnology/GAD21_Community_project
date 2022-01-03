@@ -1,27 +1,35 @@
 # GAD21_Community_project
-1Launch in your GCP
+Ngounou_Remote_Hospital (NgRH):Is a web platform where patients and victims of violence can be consulted or assisted remotely by doctors of their choice.
+1 Launch in your GCP:
+    -Enable Cloud build API, and create cloud build service account with roles App engine Admin, Cloud build service account.
+    -Enable secret Manger API, also add roles Secret Manager Secret Accessor in Compute Engine default service account , and Secret Manager Admin in App Engine default service account
+    
 
 2 Clone this repository by type this in your prompt shell: 
 	git clone https://github.com/armeltechnology/GAD21_Community_project.git 
 
-3 Open script file"initial_configuration_ngrh.sh" to change range of ip address if you want. 
-	then save 
+3 Open script file"initial_configuration_ngrh.sh" to change:
+    - range of ip address if you want. 
+    - replace all those with your own parameters [instance_Name], [database_Name], [PASSWORD], [project-Id]
+	then save.
 	Run the executable file by running the following script command: . initial_configuration_ngrh.sh
 		This script file: 
 			Creates an App Engine application. 
 			Creates a Cloud Storage bucket. 
 			Exports environment variables GCLOUD_PROJECT and GCLOUD_BUCKET. 
 			Creates ngrhnet and ngrhsubnet for you in us-central. 
+            Creating Cloud SQL instances
+            Set the password for the root  MySQL user 
+            Create database
+            create secret for data source configuration
+            list secret
 			Prints out the Project ID. 
 
-4 Create Sql instance in the us-central region and setup the ip in the network you are nearly create.
-	Create user 
-	Create database 
+4 verify all previous is done befor go to to next
 
 5 Change to the directory that contains the project_community Healtcare NgRH by type this command : 
 	cd project_GAD21_Community_Healthcare-NgRH/
-	Open file to src/main/resources/application.properties  then Change all the information following 
-	your credential and your instance-name, database, password. 
+	Open file to src/main/resources/application.properties and bootstrap.properties  then replace [project number] with your own povide by google cloud. 
 
 6 Ensure your in the path: cd GAD21_Community_project.git/project_GAD21_Community_Healthcare-NgRH/ 
 	Runs this command: 
