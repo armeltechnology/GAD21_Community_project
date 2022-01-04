@@ -19,20 +19,21 @@
 			Creates a Cloud Storage bucket. 
 			Exports environment variables GCLOUD_PROJECT and GCLOUD_BUCKET. 
 			Creates ngrhnet and ngrhsubnet for you in us-central. 
-            Creating Cloud SQL instances
-            Set the password for the root  MySQL user 
-            Create database
-            create secret for data source configuration
-            list secret
+           		Creating Cloud SQL instances
+           		Set the password for the root  MySQL user 
+           		Create database
+       		     	Create secret for data source configuration
+            		list secret
 			Prints out the Project ID. 
 
-## 4 verify all previous is done befor go to to next
+## 4 verify all previous is done befor go to next
 
 ## 5 Change to the directory that contains the project_community Healtcare NgRH by type this command : 
 	cd project_GAD21_Community_Healthcare-NgRH/
 	Open file to src/main/resources/application.properties and bootstrap.properties  then replace [project number] with your own povide by google cloud. 
 
-## 6 Ensure your in the path: cd GAD21_Community_project.git/project_GAD21_Community_Healthcare-NgRH/ 
+## 6 Ensure your in the path: 
+	cd GAD21_Community_project.git/project_GAD21_Community_Healthcare-NgRH/ 
 	Runs this command: 
 		 mvn clean install 
 
